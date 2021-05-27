@@ -1,0 +1,86 @@
+body {
+  background-color: rgb(62, 70, 55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 99vh;
+}
+
+#main-body {
+  color: rgb(129, 140, 124);
+  background-color: rgb(76, 88, 68);
+  border: outset 3px rgb(135, 147, 127);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#main-body button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border: outset 2px rgb(135, 147, 127);
+}
+
+#main-body button:active {
+  border: inset 2px rgb(135, 147, 127);
+}
+
+#title {
+  text-align: center;
+  color: rgb(181, 175, 129);
+}
+
+#length-adj-wrapper {
+  display: flex;
+}
+
+#length-adj-wrapper>div,
+#timer-body,
+#buttons {
+  border: inset 3px rgb(135, 147, 127);
+  margin: 12px;
+  padding: 20px;
+}
+
+#break-label button,
+#session-label button {
+  padding: 5px;
+  margin: 2px;
+}
+
+#break-label {
+  text-align: center;
+  font-size: 28px;
+}
+
+#session-label {
+  text-align: center;
+  font-size: 28px;
+}
+
+#break-label img,
+#session-label img {
+  height: 1em;
+  width: 1em;
+}
+
+#timer-body {
+  text-align: center;
+  font-size: 60px;
+  color: rgb(181, 175, 129);
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#buttons button {
+  margin: 10px;
+  padding: 10px;
+}

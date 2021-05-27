@@ -1,0 +1,92 @@
+body {
+  background-color: rgb(62, 70, 55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 99vh;
+}
+
+#main-body {
+  color: rgb(129, 140, 124);
+  display: grid;
+  background-color: rgb(76, 88, 68);
+  border: outset 3px rgb(135, 147, 127);
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    ". title title ."
+    "break break session session"
+    ". timer timer ."
+    ". buttons buttons .";
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#main-body>div {
+  border: inset 3px rgb(135, 147, 127);
+  margin: 12px;
+  padding: 20px;
+}
+
+#main-body button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border: outset 2px rgb(135, 147, 127);
+}
+
+#main-body button:active {
+  border: inset 2px rgb(135, 147, 127);
+}
+
+#title {
+  grid-area: title;
+  text-align: center;
+}
+
+#break-label button,
+#session-label button {
+  padding: 5px;
+  margin: 2px;
+}
+
+#break-label {
+  grid-area: break;
+  text-align: center;
+  font-size: 28px;
+}
+
+#session-label {
+  grid-area: session;
+  text-align: center;
+  font-size: 28px;
+}
+
+#break-label img,
+#session-label img {
+  height: 1em;
+  width: 1em;
+}
+
+#timer-body {
+  grid-area: timer;
+  text-align: center;
+  font-size: 60px;
+}
+
+#buttons {
+  grid-area: buttons;
+  
+}
+
+#buttons button {
+  height: 65px;
+  width: 65px;
+  top: 0px;
+  margin: 10px;
+}
